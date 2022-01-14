@@ -7,19 +7,28 @@ body {
   color: $tuna;
 }
 
+// fix this
 button {
   color: #ffffff;
   background-color: $cherryRed;
-  padding: 20px 40px;
+  padding: 10px 40px;
   border: 0;
   cursor: pointer;
   font-size: 1.375rem;
   font-family: "Roboto Mono", monospace;
   border-radius: 1.875em;
+  border: 5px solid $cherryRed;
 }
 
 button:hover {
   background-color: $totemPole;
+  border: 5px solid $totemPole;
+}
+
+button:focus {
+  position: relative;
+  background-color: $totemPole;
+  border: 2px solid #f47073;
 }
 
 input {

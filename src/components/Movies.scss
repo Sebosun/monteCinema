@@ -1,0 +1,163 @@
+@import "../scss/variables";
+
+.movies {
+  display: flex;
+  flex-direction: column;
+  gap: 1.34rem;
+
+  &__menu {
+    font-family: "Roboto Mono", monospace;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    &__soon {
+      text-transform: uppercase;
+    }
+    &__all {
+      color: $cherryRed;
+      text-transform: uppercase;
+    }
+  }
+
+  &__card {
+    box-shadow: 0px 1.596024513244629px 5.187079429626465px 0px #00000004;
+    box-shadow: 0px 5.360713958740234px 17.422321319580078px 0px #00000006;
+    box-shadow: 0px 24px 78px 0px #00000014;
+    border-radius: 8px;
+    background-color: #ffffff;
+
+    h1 {
+      font-family: Roboto;
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 42px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+    p {
+      font-family: Roboto;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 31px;
+      letter-spacing: 0.04em;
+      text-align: left;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    margin: 3rem 0;
+
+    &__menu {
+      font-size: 22px;
+      line-height: 170%;
+      letter-spacing: 0.015rem;
+
+      .text_short {
+        display: none;
+      }
+    }
+
+    &__wrapper {
+      display: flex;
+      justify-content: around;
+      gap: 2.3em;
+    }
+
+    &__card {
+      display: flex;
+      align-self: stretch;
+      flex-direction: column;
+
+      gap: 1rem;
+      padding: 2.23em;
+
+      img {
+        top: 20px;
+        width: 100%;
+        height: 12rem;
+        object-fit: cover;
+      }
+      &:last-child {
+        display: none;
+      }
+    }
+  }
+
+  @media (min-width: 1440px) {
+    &__card {
+      &:last-child {
+        display: block;
+        display: flex;
+        align-self: stretch;
+        flex-direction: column;
+
+        gap: 1rem;
+        padding: 2.23em;
+
+        img {
+          top: 20px;
+          width: 100%;
+          height: 12rem;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1023px) {
+    padding: 1.8rem;
+    &__menu {
+      font-family: "Roboto Mono", monospace;
+      font-weight: bold;
+      font-size: 22px;
+      line-height: 170%;
+      letter-spacing: 0.015rem;
+      display: flex;
+      justify-content: space-between;
+
+      .text_full {
+        display: none;
+      }
+
+      &__soon {
+        text-transform: uppercase;
+      }
+      &__all {
+        color: $cherryRed;
+        text-transform: uppercase;
+      }
+    }
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    &__card {
+      padding: 24px;
+
+      display: flex;
+      flex-direction: column;
+      border-radius: 8px;
+      h1 {
+        font-size: 2rem;
+        line-height: 1.3rem;
+      }
+      p {
+        font-size: 14px;
+        line-height: 2rem;
+        letter-spacing: 4%;
+      }
+      // TODO: checkout cropping images
+      img {
+        width: 100%;
+        height: 160px;
+        margin-top: 18px;
+        margin-bottom: 18px;
+        object-fit: cover;
+        object-position: top center;
+      }
+    }
+  }
+}

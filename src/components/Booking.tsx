@@ -1,5 +1,6 @@
 import type { ReactElement } from "react";
 import logo from "../../public/logo.svg";
+import "./Bookings.scss";
 
 export default function Booking(): ReactElement | null {
   //todo imput
