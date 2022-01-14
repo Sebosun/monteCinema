@@ -1,11 +1,15 @@
 @import "./variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Eczar:wght@600&family=Roboto+Mono:wght@400;500&display=swap");
+
+body {
+  color: $tuna;
+}
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-inline: 2em;
-  padding-top: 1.2em;
+  padding: 2em 1.2em;
   background-color: cherryRed;
 
   .span {
@@ -21,13 +25,37 @@
   }
 }
 
+main {
+  padding: 3.125em 2em;
+  background-color: $wispPink;
+  text-align: center;
+  .card {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5625em;
+    h1 {
+      font-size: 3em;
+      font-family: "Eczar", serif;
+      font-weight: 600;
+    }
+    p {
+      font-family: "Roboto Mono", monospace;
+
+      letter-spacing: 0.015em;
+      font-size: 22px;
+      line-height: 170%;
+    }
+  }
+}
+
 .btn {
   color: #ffffff;
   background-color: $cherryRed;
-  padding-top: 2.5em;
-  padding-bottom: 2.5em;
-  padding-inline: 1.3125em;
-
+  padding: 20px 40px;
+  border: 0;
+  cursor: pointer;
+  font-size: 1.375em;
+  font-family: "Roboto Mono", monospace;
   border-radius: 1.875em;
 }
 
