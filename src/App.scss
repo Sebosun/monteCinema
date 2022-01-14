@@ -1,9 +1,10 @@
-@import "./variables.scss";
+@import "./scss/variables.scss";
+@import "./scss/_globals.scss";
 @import url("https://fonts.googleapis.com/css2?family=Eczar:wght@600&family=Roboto+Mono:wght@300;500&family=Roboto:wght@400;700&display=swap");
 
-body {
-  color: $tuna;
-}
+// body {
+//   padding: 2em;
+// }
 
 .header {
   display: flex;
@@ -29,20 +30,60 @@ main {
   padding: 3.125rem 2rem;
   background-color: $wispPink;
   text-align: center;
+
   .card {
     display: flex;
     flex-direction: column;
-    gap: 2.5625rem;
     h1 {
-      font-size: 3rem;
       font-family: "Eczar", serif;
       font-weight: 600;
     }
     p {
       font-family: "Roboto Mono", monospace;
-      letter-spacing: 0.015rem;
       font-size: 22px;
       line-height: 170%;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .card {
+      max-width: 47rem;
+      margin-inline: auto;
+      display: flex;
+      gap: 2.5625rem;
+      h1 {
+        font-size: 80px;
+        padding-inline: 2.3125rem;
+        line-height: 82px;
+        letter-spacing: -0.01em;
+      }
+      p {
+        padding-inline: 2.3125rem;
+
+        font-family: Roboto Mono;
+        font-size: 22px;
+        line-height: 37px;
+        letter-spacing: 0.015em;
+        text-align: center;
+      }
+      button {
+        margin-inline: auto;
+        text-align: center;
+        justify-self: center;
+        max-width: 16rem;
+      }
+    }
+  }
+
+  @media (max-width: 1023px) {
+    .card {
+      gap: 2.5625rem;
+      h1 {
+        font-size: 3rem;
+      }
+      p {
+        letter-spacing: 0.015rem;
+      }
     }
   }
 }
@@ -102,7 +143,7 @@ main {
       width: 100%;
       height: 192px;
       object-fit: cover;
-      object-position: center;
+      object-position: top center;
     }
   }
 }
@@ -151,54 +192,4 @@ main {
     flex-direction: column;
     gap: 0.75rem;
   }
-}
-
-.btn {
-  color: #ffffff;
-  background-color: $cherryRed;
-  padding: 20px 40px;
-  border: 0;
-  cursor: pointer;
-  font-size: 1.375rem;
-  font-family: "Roboto Mono", monospace;
-  border-radius: 1.875em;
-}
-
-.btn:hover {
-  background-color: $totemPole;
-}
-
-input {
-  display: flex;
-  align-items: center;
-  padding: 1em;
-  padding-left: 1.4em;
-  background-color: #f0f0f0;
-  border-radius: 8px;
-  border: 0;
-  font-family: Roboto;
-  font-size: 1rem;
-  line-height: 21px;
-  &::placeholder {
-    color: $jumbo;
-  }
-  &:hover {
-    background-color: #e5e5e5;
-  }
-  &:focus {
-    color: #2f80ed;
-    background: #2f80ed1a;
-  }
-}
-
-label {
-  text-align: left;
-  font-family: Roboto Mono;
-  color: $bittersweet;
-  font-size: 0.875em;
-  text-transform: uppercase;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 1rem;
-  text-align: left;
 }

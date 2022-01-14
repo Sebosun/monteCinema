@@ -1,0 +1,53 @@
+body {
+  color: $tuna;
+}
+
+button {
+  color: #ffffff;
+  background-color: $cherryRed;
+  padding: 20px 40px;
+  border: 0;
+  cursor: pointer;
+  font-size: 1.375rem;
+  font-family: "Roboto Mono", monospace;
+  border-radius: 1.875em;
+}
+
+button:hover {
+  background-color: $totemPole;
+}
+
+input {
+  display: flex;
+  align-items: center;
+  padding: 1em;
+  padding-left: 1.4em;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  border: 0;
+  font-family: Roboto;
+  font-size: 1rem;
+  line-height: 21px;
+  &::placeholder {
+    color: $jumbo;
+  }
+  &:hover {
+    background-color: #e5e5e5;
+  }
+  &:focus {
+    color: #2f80ed;
+    background: #2f80ed1a;
+  }
+}
+
+label {
+  text-align: left;
+  font-family: Roboto Mono;
+  color: $bittersweet;
+  font-size: 0.875em;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1rem;
+  text-align: left;
+}
