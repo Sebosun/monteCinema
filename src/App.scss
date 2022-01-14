@@ -76,6 +76,9 @@ main {
       line-height: 170%;
     }
   }
+  .hero {
+    display: none;
+  }
 
   @media (min-width: 1024px) {
     .card {
@@ -85,18 +88,16 @@ main {
       gap: 2.5625rem;
       h1 {
         font-size: 80px;
-        padding-inline: 2.3125rem;
-        line-height: 82px;
+        margin-left: 2.3125rem;
+        line-height: 81px;
         letter-spacing: -0.01em;
       }
       p {
-        padding-inline: 2.3125rem;
-
+        margin-left: 2.3125rem;
         font-family: Roboto Mono;
         font-size: 22px;
         line-height: 37px;
         letter-spacing: 0.015em;
-        text-align: center;
       }
       button {
         margin-inline: auto;
@@ -104,6 +105,40 @@ main {
         justify-self: center;
         max-width: 16rem;
       }
+    }
+  }
+
+  @media (min-width: 1440px) {
+    padding: 0;
+    display: grid;
+    justify-content: start;
+    grid-template-columns: 55% 1fr;
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: left;
+      gap: 40px;
+      padding: 80px;
+      p {
+        text-align: left;
+        margin-left: 2.3125rem;
+      }
+      h1 {
+        margin-left: 2.3125rem;
+      }
+      button {
+        margin-left: 2.3125rem;
+      }
+    }
+
+    .hero {
+      display: block;
+      background: url("/public/unsplash-AtPWnYNDJnM.jpg");
+      height: 100%;
+      background-size: cover;
+      background-position: bottom;
     }
   }
 
@@ -168,6 +203,7 @@ main {
 
   @media (min-width: 1024px) {
     margin: 3rem 0;
+
     &__menu {
       font-size: 22px;
       line-height: 170%;
@@ -180,7 +216,7 @@ main {
 
     &__wrapper {
       display: flex;
-      justify-content: stretch;
+      justify-content: around;
       gap: 2.3em;
     }
 
@@ -305,8 +341,9 @@ main {
     &__contact {
       display: flex;
       max-width: 600px;
-      justify-content: center;
+
       align-items: center;
+      justify-content: center;
       flex-direction: column;
       gap: 2rem;
 

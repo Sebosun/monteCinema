@@ -1,4 +1,5 @@
 import type { ReactElement } from "react";
+import image from "../../public/unsplash-AtPWnYNDJnM.jpg";
 
 interface HeroProps {
   title: String;
@@ -16,6 +17,7 @@ export default function Hero({
         <p>{subTitle}</p>
         <button className="btn">Book a ticket</button>
       </div>
+      <div className="hero"></div>
     </main>
   );
 }
