@@ -14,9 +14,7 @@ export default function MovieCard({
   return (
     <div className="movies__card">
       <h1>{title}</h1>
-      <div className="movies__card__image">
-        <img src={image} alt={title} />
-      </div>
+      <img src={image} alt={title} />
       <p>{text}</p>
     </div>
   );

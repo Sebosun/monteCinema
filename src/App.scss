@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Eczar:wght@600&family=Roboto+Mono:wght@300;500&family=Roboto:wght@400;700&display=swap");
 
 body {
-  @media (min-width: 1024) {
+  @media (min-width: 1024px) {
     padding: 0 2em 2em 2em;
   }
 }
@@ -124,7 +124,6 @@ main {
   display: flex;
   flex-direction: column;
   gap: 1.34rem;
-  padding: 1.8rem;
 
   &__menu {
     font-family: "Roboto Mono", monospace;
@@ -140,8 +139,35 @@ main {
     }
   }
 
+  &__card {
+    box-shadow: 0px 1.596024513244629px 5.187079429626465px 0px #00000004;
+    box-shadow: 0px 5.360713958740234px 17.422321319580078px 0px #00000006;
+    box-shadow: 0px 24px 78px 0px #00000014;
+    border-radius: 8px;
+    background-color: #ffffff;
+
+    h1 {
+      font-family: Roboto;
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 42px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+    p {
+      font-family: Roboto;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 31px;
+      letter-spacing: 0.04em;
+      text-align: left;
+    }
+  }
+
   @media (min-width: 1024px) {
-    padding: 2.3em;
+    margin: 3rem 0;
     &__menu {
       font-size: 22px;
       line-height: 170%;
@@ -162,48 +188,26 @@ main {
       &:last-child {
         display: none;
       }
-      align-self: stretch;
+
       display: flex;
+      align-self: stretch;
       flex-direction: column;
 
-      background-color: #ffffff;
-      padding: 2.23em;
-      box-shadow: 0px 1.596024513244629px 5.187079429626465px 0px #00000004;
-      box-shadow: 0px 5.360713958740234px 17.422321319580078px 0px #00000006;
-      box-shadow: 0px 24px 78px 0px #00000014;
-      border-radius: 8px;
       gap: 1rem;
-      h1 {
-        font-family: Roboto;
-        font-size: 36px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 42px;
-        letter-spacing: 0em;
-        text-align: left;
-      }
-      p {
-        font-family: Roboto;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 31px;
-        letter-spacing: 0.04em;
-        text-align: left;
-      }
+      padding: 2.23em;
+
       // TODO: checkout cropping images
       img {
-        height: 160px;
+        top: 20px;
         width: 100%;
-        margin-top: 18px;
-        margin-bottom: 18px;
+        height: 12rem;
         object-fit: cover;
-        object-position: center;
       }
     }
   }
 
   @media (max-width: 1023px) {
+    padding: 1.8rem;
     &__menu {
       font-family: "Roboto Mono", monospace;
       font-weight: bold;
@@ -231,27 +235,19 @@ main {
       gap: 1.5rem;
     }
     &__card {
-      background-color: #ffffff;
       padding: 24px;
-      box-shadow: 0px 1.596024513244629px 5.187079429626465px 0px #00000004;
-      box-shadow: 0px 5.360713958740234px 17.422321319580078px 0px #00000006;
-      box-shadow: 0px 24px 78px 0px #00000014;
-      border-radius: 8px;
+
       display: flex;
       flex-direction: column;
+      border-radius: 8px;
       h1 {
-        font-family: Roboto;
-        font-weight: 700;
         font-size: 2rem;
         line-height: 1.3rem;
       }
       p {
-        font-family: Roboto;
-        font-size: 16px;
-        font-style: normal;
+        font-size: 14px;
         line-height: 2rem;
         letter-spacing: 4%;
-        text-align: left;
       }
       // TODO: checkout cropping images
       img {
