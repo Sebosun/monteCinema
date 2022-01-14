@@ -3,7 +3,6 @@
 
 body {
   color: $tuna;
-  background-color: #e5e5e5;
 }
 
 .header {
@@ -151,22 +150,6 @@ main {
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
-    label {
-      text-align: left;
-      font-family: Roboto Mono;
-      color: $bittersweet;
-      font-size: 0.875em;
-      text-transform: uppercase;
-      font-style: normal;
-      font-weight: 700;
-      line-height: 1rem;
-      text-align: left;
-    }
-    input {
-      display: flex;
-      align-items: center;
-      padding: 1.5em 1em 1.5em 1.5em;
-    }
   }
 }
 
@@ -183,4 +166,39 @@ main {
 
 .btn:hover {
   background-color: $totemPole;
+}
+
+input {
+  display: flex;
+  align-items: center;
+  padding: 1em;
+  padding-left: 1.4em;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  border: 0;
+  font-family: Roboto;
+  font-size: 1rem;
+  line-height: 21px;
+  &::placeholder {
+    color: $jumbo;
+  }
+  &:hover {
+    background-color: #e5e5e5;
+  }
+  &:focus {
+    color: #2f80ed;
+    background: #2f80ed1a;
+  }
+}
+
+label {
+  text-align: left;
+  font-family: Roboto Mono;
+  color: $bittersweet;
+  font-size: 0.875em;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1rem;
+  text-align: left;
 }
