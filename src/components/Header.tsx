@@ -6,11 +6,17 @@ export default function Header(): ReactElement | null {
     <header className="header">
       <img src={logo} alt="monte cinema" />
       <nav>
-        <ul>
+        <ul className="header__list">
+          <li className="header__burger">
+            <span className="span"></span>
+            <span className="span"></span>
+            <span className="span"></span>
+          </li>
           <li>
-            <span className="span"></span>
-            <span className="span"></span>
-            <span className="span"></span>
+            <button className="header__list__register">Register</button>
+          </li>
+          <li>
+            <button>Login</button>
           </li>
         </ul>
       </nav>
