@@ -1,8 +1,9 @@
 @import "./variables.scss";
-@import url("https://fonts.googleapis.com/css2?family=Eczar:wght@600&family=Roboto+Mono:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Eczar:wght@600&family=Roboto+Mono:wght@300;500&family=Roboto:wght@400;700&display=swap");
 
 body {
   color: $tuna;
+  background-color: #e5e5e5;
 }
 
 .header {
@@ -40,10 +41,69 @@ main {
     }
     p {
       font-family: "Roboto Mono", monospace;
-
       letter-spacing: 0.015em;
       font-size: 22px;
       line-height: 170%;
+    }
+  }
+}
+
+.movies {
+  display: flex;
+  flex-direction: column;
+  gap: 1.34em;
+  padding: 1.8em;
+  &__menu {
+    font-family: "Roboto Mono", monospace;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 170%;
+    letter-spacing: 0.015em;
+    display: flex;
+    justify-content: space-between;
+    &__soon {
+      text-transform: uppercase;
+    }
+    &__all {
+      color: $cherryRed;
+      text-transform: uppercase;
+    }
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+  }
+  &__card {
+    background-color: #ffffff;
+    padding: 24px;
+    box-shadow: 0px 1.596024513244629px 5.187079429626465px 0px #00000004;
+    box-shadow: 0px 5.360713958740234px 17.422321319580078px 0px #00000006;
+    box-shadow: 0px 24px 78px 0px #00000014;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    h1 {
+      font-family: Roboto;
+      font-weight: 700;
+      font-size: 2em;
+      line-height: 1.3em;
+    }
+
+    p {
+      font-family: Roboto;
+      font-size: 16px;
+      font-style: normal;
+      line-height: 2em;
+      letter-spacing: 4%;
+      text-align: left;
+    }
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: fill;
+      object-position: center;
     }
   }
 }
