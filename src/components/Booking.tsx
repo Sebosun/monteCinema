@@ -9,21 +9,23 @@ export default function Booking(): ReactElement | null {
         <h1>Online booking</h1>
         <p>Soon</p>
       </div>
-      <img src={logo} alt="logo" />
-      <p>
-        Leave us your email address and we’ll let you know as soon as the
-        machine will start.
-      </p>
-      <form className="form">
-        <label htmlFor="email">Email</label>
+      <div className="booking__contact">
+        <img src={logo} alt="logo" />
+        <p>
+          Leave us your email address and we’ll let you know as soon as the
+          machine will start.
+        </p>
+        <form className="form">
+          <label htmlFor="email">Email</label>
 
-        <input
-          type="email"
-          id="email"
-          placeholder="e.g. mynameislaura@mail.com"
-        />
-      </form>
-      <button className="btn">Let me know!</button>
+          <input
+            type="email"
+            id="email"
+            placeholder="e.g. mynameislaura@mail.com"
+          />
+        </form>
+        <button className="btn">Let me know!</button>
+      </div>
     </div>
   );
 }
