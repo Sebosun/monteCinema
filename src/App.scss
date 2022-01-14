@@ -1,0 +1,36 @@
+@import "./variables.scss";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 2em;
+  padding-top: 1.2em;
+  background-color: cherryRed;
+
+  .span {
+    display: block;
+    width: 33px;
+    height: 2px;
+    margin-bottom: 6px;
+    position: relative;
+    background-color: #5d5d67;
+  }
+  .span:last-child {
+    margin-bottom: 0px;
+  }
+}
+
+.btn {
+  color: #ffffff;
+  background-color: $cherryRed;
+  padding-top: 2.5em;
+  padding-bottom: 2.5em;
+  padding-inline: 1.3125em;
+
+  border-radius: 1.875em;
+}
+
+.btn:hover {
+  background-color: $totemPole;
+}
