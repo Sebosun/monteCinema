@@ -1,4 +1,9 @@
 body {
+  @media (min-width: 1024px) {
+    padding: 0 40px 40px 40px;
+  }
+  max-width: 1344px;
+  margin: 0 auto;
   color: $tuna;
 }
 
