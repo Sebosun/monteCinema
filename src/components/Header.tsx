@@ -1,6 +1,6 @@
 import type { ReactElement } from "react";
 import "./Header.scss";
-import logo from "../../public/logo.svg";
+import logo from "/logo.svg";
 
 export default function Header(): ReactElement | null {
   return (

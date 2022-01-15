@@ -1,6 +1,5 @@
 import type { ReactElement } from "react";
 import "./Hero.scss";
-import image from "../../public/unsplash-AtPWnYNDJnM.jpg";
 
 interface HeroProps {
   title: String;

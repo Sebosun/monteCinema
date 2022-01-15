@@ -3,9 +3,9 @@ import type { ReactElement } from "react";
 import "./Movies.scss";
 
 import MovieCard from "./MovieCard";
-import PredatorImage from "../../public/predator.png";
-import CommandoImage from "../../public/commando.png";
-import TerminatorImage from "../../public/terminator.png";
+import PredatorImage from "/predator.png";
+import CommandoImage from "/commando.png";
+import TerminatorImage from "/terminator.png";
 
 export default function Movies(): ReactElement | null {
   return (

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "../../public/logo.svg";
+import logo from "/logo.svg";
 import "./Bookings.scss";
 
 const Booking = React.forwardRef<HTMLDivElement>((props, ref) => {
