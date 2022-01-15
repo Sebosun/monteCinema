@@ -26,6 +26,22 @@
     }
   }
 
+  span {
+    display: block;
+    position: relative;
+    height: 24px;
+    width: 24px;
+    border-radius: 1000px;
+    background-color: white;
+  }
+
+  .loading {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
   @media (min-width: 640px) {
     &__top {
       h1 {
@@ -64,16 +80,26 @@
 
       .form {
         width: 100%;
-
         display: flex;
         text-align: left;
         flex-direction: column;
-        gap: 12px;
+        gap: 10px;
       }
 
       button {
+        margin-top: 30px;
         width: 100%;
         font-size: 18px;
+      }
+      &__submitted {
+        font-family: Eczar;
+        font-size: 3rem;
+        display: flex;
+        padding-inline: 2.296875rem;
+        // width: h31px;
+        height: 367px;
+        justify-content: center;
+        align-items: center;
       }
     }
   }
@@ -113,6 +139,24 @@
         flex-direction: column;
         gap: 0.75rem;
       }
+      &__submitted {
+        font-family: Eczar;
+        font-size: 1.4rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
     }
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
   }
 }
