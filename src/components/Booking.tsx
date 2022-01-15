@@ -1,8 +1,8 @@
-import { ReactElement, useState } from "react";
+import React, { useState } from "react";
 import logo from "../../public/logo.svg";
 import "./Bookings.scss";
 
-export default function Booking(): ReactElement | null {
+const Booking = React.forwardRef<HTMLDivElement>((props, ref) => {
   const [email, setEmail] = useState("");
   const [loading, setLoading] = useState(false);
   const [submitted, setSubmitted] = useState(false);
@@ -21,7 +21,7 @@ export default function Booking(): ReactElement | null {
   }
 
   return (
-    <div className="booking">
+    <div ref={ref} className="booking">
       <div className="booking__top">
         <h1>Online booking</h1>
         <p>Soon</p>
@@ -65,4 +65,6 @@ export default function Booking(): ReactElement | null {
       </div>
     </div>
   );
-}
+});
+
+export default Booking;
