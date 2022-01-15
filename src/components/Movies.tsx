@@ -1,5 +1,7 @@
 import type { ReactElement } from "react";
+
 import "./Movies.scss";
+
 import MovieCard from "./MovieCard";
 import PredatorImage from "../../public/predator.png";
 import CommandoImage from "../../public/commando.png";

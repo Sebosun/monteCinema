@@ -1,34 +1,10 @@
 body {
-  @media (min-width: 1024px) {
+  @media (min-width: 640px) {
     padding: 0 40px 40px 40px;
   }
   max-width: 1344px;
   margin: 0 auto;
   color: $tuna;
-}
-
-// fix this
-button {
-  color: #ffffff;
-  background-color: $cherryRed;
-  padding: 10px 40px;
-  border: 0;
-  cursor: pointer;
-  font-size: 1.375rem;
-  font-family: "Roboto Mono", monospace;
-  border-radius: 1.875em;
-  border: 5px solid $cherryRed;
-}
-
-button:hover {
-  background-color: $totemPole;
-  border: 5px solid $totemPole;
-}
-
-button:focus {
-  position: relative;
-  background-color: $totemPole;
-  border: 2px solid #f47073;
 }
 
 input {

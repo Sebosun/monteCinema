@@ -1,0 +1,100 @@
+@import "../scss/variables";
+
+main {
+  padding: 3.125rem 2rem;
+  background-color: $wispPink;
+  text-align: center;
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    h1 {
+      font-family: "Eczar", serif;
+      font-weight: 600;
+    }
+    p {
+      font-family: "Roboto Mono", monospace;
+      font-size: 22px;
+      line-height: 170%;
+    }
+  }
+  .hero {
+    display: none;
+  }
+
+  @media (min-width: 640px) {
+    .card {
+      max-width: 47rem;
+      margin-inline: auto;
+      display: flex;
+      gap: 2.5625rem;
+      h1 {
+        font-size: 80px;
+        margin-inline: 2.3125rem;
+        line-height: 81px;
+        letter-spacing: -0.01em;
+      }
+      p {
+        margin-inline: 2.3125rem;
+        font-family: Roboto Mono;
+        font-size: 22px;
+        line-height: 37px;
+        letter-spacing: 0.015em;
+      }
+      button {
+        margin-inline: auto;
+        text-align: center;
+        justify-self: center;
+        max-width: 16rem;
+      }
+    }
+  }
+
+  @media (min-width: 1400px) {
+    padding: 0;
+    max-width: 1344px;
+    margin: 0 auto;
+    display: grid;
+    justify-content: start;
+    grid-template-columns: 54% 1fr;
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: left;
+      gap: 40px;
+      padding: 80px;
+      p {
+        text-align: left;
+        margin-inline: 0;
+      }
+      h1 {
+        margin-inline: 0;
+      }
+      button {
+        margin-inline: 0;
+      }
+    }
+
+    .hero {
+      display: block;
+      background: url("/public/unsplash-AtPWnYNDJnM.jpg");
+      height: 100%;
+      background-size: cover;
+      background-position: bottom;
+    }
+  }
+
+  @media (max-width: 639px) {
+    .card {
+      gap: 2.5625rem;
+      h1 {
+        font-size: 3rem;
+      }
+      p {
+        letter-spacing: 0.015rem;
+      }
+    }
+  }
+}

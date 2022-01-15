@@ -14,10 +14,10 @@ export default function Header(): ReactElement | null {
             <span className="span"></span>
           </li>
           <li>
-            <button className="header__list__register">Register</button>
+            <button className="reg">Register</button>
           </li>
           <li>
-            <button>Login</button>
+            <button className="btn">Login</button>
           </li>
         </ul>
       </nav>
