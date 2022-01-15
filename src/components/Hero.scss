@@ -52,11 +52,10 @@ main {
 
   @media (min-width: 1400px) {
     padding: 0;
-    max-width: 1344px;
     margin: 0 auto;
     display: grid;
     justify-content: start;
-    grid-template-columns: 54% 1fr;
+    grid-template-columns: 55% 1fr;
 
     .card {
       display: flex;

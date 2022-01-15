@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
   @media (min-width: 640px) {
     padding: 0 40px 40px 40px;
@@ -27,6 +30,9 @@ input {
   &:focus {
     color: #2f80ed;
     background: #2f80ed1a;
+    border-color: #2f80ed;
+    --tw-ring-color: #2f80ed;
+    outline: 2px solid #2f80ed;
   }
 }
 
