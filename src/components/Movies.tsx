@@ -13,7 +13,9 @@ export default function Movies(): ReactElement | null {
       <div className="movies__menu">
         <div className="movies__menu__soon text_full">Soon in the cinema</div>
         <div className="movies__menu__soon text_short">Soon</div>
-        <div className="movies__menu__all">See all</div>
+        <a href="" className="movies__menu__all">
+          See all
+        </a>
       </div>
       <div className="movies__wrapper">
         <MovieCard
