@@ -6,11 +6,16 @@ import Hero from "./components/Hero";
 import Movies from "./components/Movies";
 
 function App() {
-  const myRef = useRef<HTMLInputElement>(null);
+  const inputRef = useRef<HTMLInputElement>(null);
+  const divRef = useRef<HTMLDivElement>(null);
 
-  const executeScroll = () => {
-    myRef && myRef.current!.scrollIntoView();
-    myRef.current!.focus();
+  // Workaround for Firefox.
+  // It wouldn't center if the focused thing was an input,
+  // but would if it's a div
+  const executeFocus = async () => {
+    divRef.current!.scrollIntoView();
+    await new Promise((resolve) => setTimeout(resolve, 600));
+    inputRef.current!.focus();
   };
 
   return (
@@ -19,10 +24,12 @@ function App() {
       <Hero
         title="Welcome to the best cinema in Monterail"
         subTitle="Best movies, best experiences, best people. An all that doesn't exist. Yikes."
-        executeScroll={executeScroll}
+        executeScroll={executeFocus}
       />
       <Movies />
-      <Booking ref={myRef} />
+      <div ref={divRef}>
+        <Booking ref={inputRef} />
+      </div>
     </div>
   );
 }
