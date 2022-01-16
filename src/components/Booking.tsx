@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import logo from "/logo.svg";
 import "./Bookings.scss";
 
-const Booking = React.forwardRef<HTMLDivElement>((props, ref) => {
+const Booking = React.forwardRef<HTMLInputElement>((props, ref) => {
   const [email, setEmail] = useState("");
   const [loading, setLoading] = useState(false);
   const [submitted, setSubmitted] = useState(false);
@@ -21,7 +21,7 @@ const Booking = React.forwardRef<HTMLDivElement>((props, ref) => {
   }
 
   return (
-    <div ref={ref} className="booking">
+    <div className="booking">
       <div className="booking__top">
         <h1>Online booking</h1>
         <p>Soon</p>
@@ -44,6 +44,7 @@ const Booking = React.forwardRef<HTMLDivElement>((props, ref) => {
               <input
                 type="email"
                 id="email"
+                ref={ref}
                 value={email}
                 onChange={onUserInput}
                 placeholder="e.g. mynameislaura@mail.com"

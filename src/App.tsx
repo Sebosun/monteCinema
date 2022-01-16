@@ -6,10 +6,11 @@ import Hero from "./components/Hero";
 import Movies from "./components/Movies";
 
 function App() {
-  const myRef = useRef<HTMLDivElement>(null);
+  const myRef = useRef<HTMLInputElement>(null);
 
   const executeScroll = () => {
     myRef && myRef.current!.scrollIntoView();
+    myRef.current!.focus();
   };
 
   return (
