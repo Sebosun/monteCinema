@@ -6,8 +6,14 @@
   align-items: center;
   background-color: cherryRed;
 
+  button {
+    font-size: 16px;
+  }
+
   @media (min-width: 640px) {
-    padding: 41px 0 41px 0;
+    padding-top: 41px;
+    padding-bottom: 41px;
+
     &__list {
       display: flex;
       align-items: center;
@@ -16,24 +22,18 @@
       &__burger {
         display: none;
       }
-
-      button {
-        font-size: 16px;
-        padding: 16px 30px 16px 30px;
-      }
     }
   }
 
   @media (max-width: 639px) {
     padding: 2rem 1.2rem;
+
     .span {
       display: block;
       position: relative;
-
       height: 2px;
       width: 33px;
       margin-bottom: 6px;
-
       background-color: #5d5d67;
     }
 
@@ -41,12 +41,11 @@
       margin-bottom: 0px;
     }
 
-    li {
-      display: none;
-    }
-
     li:first-child {
       display: block;
+    }
+    li {
+      display: none;
     }
   }
 }

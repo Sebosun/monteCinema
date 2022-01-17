@@ -1,18 +1,17 @@
 @import "./scss/_variables.scss";
 @import "./scss/_globals.scss";
-@import url("https://fonts.googleapis.com/css2?family=Eczar:wght@600&family=Roboto+Mono:wght@300;500&family=Roboto:wght@400;700&display=swap");
 
 .btn {
-  border-radius: 1.875em;
-  font-size: 1.375rem;
   padding: 10px 30px;
+  border: 5px solid $cherryRed;
+  border-radius: 1.875em;
 
   color: #ffffff;
   background-color: $cherryRed;
-  border: 0;
+
   cursor: pointer;
-  border: 5px solid $cherryRed;
   font-family: "Roboto Mono", monospace;
+  font-weight: 500;
 
   &:hover {
     background-color: $totemPole;
@@ -24,6 +23,7 @@
   }
 }
 
+//reg for register
 .reg {
   border: 0;
   color: $cherryRed;
